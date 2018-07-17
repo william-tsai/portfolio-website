@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Varela|Black+Ops+One|Courgette|Muli');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    margin: auto;
+}
+html,h1,h2,h3,h4,h5,h6{
+    font-family: 'Varela', sans-serif;
+    /* font-family: 'Muli', sans-serif; */
+}
+.logo{
+    font-family: 'Black Ops One', cursive;
+}
+.header{
+    background-color: #1c1c22;
+}
+.top-row{
+    height: 33vh;
+}
+.body-row{
+    margin-top: 8vh;
+}
+.body-tag{
+    color: #424242;
+    margin-bottom: 0;
+    margin-left: 16vw;
+}
+.div-tag{
+    color: #424242;
+    margin-left: 20vw;
+}
+.h1-tag{
+    margin-bottom: 0;
+    color: #424242;
+}
+.img-tag{
+    color: #555555;
+}
+.e-h1-tag{
+    color: #424242;
+}
+#profile-pic-link{
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+}
+#profile-pic-link:hover{
+    color: #fc0953;
+}
+.e-div-tag{
+    margin-top: 14vh;
+    margin-left: 20vw;
+    margin-bottom: 0;
+    color: #424242;
+}
+.e-body-tag{
+    margin-left: 16vw;
+    margin-bottom: 0;
+    color: #424242;
+}
+.e-html-tag{
+    margin-left: 12vw;
+    color: #424242;
+}
+.headline-col{
+    margin-left: 28vw;
+}
+#headline{
+    color: #f4f4f4;
+    font-size: 4vw;
+    margin-bottom: 0;
+}
+#w-initial{
+    color: #fc0953;
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.1em;
+    position: relative;
+}
+#profile-pic{
+    width: 18vw;
+    height: auto;
+    display: none;
+    position: absolute;
+}
+#scroll-btn {
+    position: absolute;
+    bottom: 2.5em;
+    left: 46vw;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+#scroll-btn:hover{
+    opacity: .5;
+}
+#scroll-btn span {
+    position: absolute;
+    top: 0.8em;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: scroll-arrow 1.5s infinite;
+    animation: scroll-arrow 1.5s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes scroll-arrow {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+@keyframes scroll-arrow {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+#about{
+    min-height: 100vh; 
+    line-height: 2.5em;
+    background-image: url('../images/journey-background.svg');
+    background-attachment: scroll;
+    background-size: 24%;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+#my-journey{
+    padding: 8em 15em 0em 15em;
+}
+.starting-words{
+    font-size: 3em;
+    font-weight: 500;
+}
+#skills .card{
+    border-radius: 30px;
+    padding: 2em 0 5em 0;
+}
+#skills{
+    background-color: #1c1c22;
+    padding: 8em 8em 8em 8em;
+}
+.skill-icon{
+    width: 20%;
+    height: 20%;
+}
+#skills h1{
+    margin-bottom: 0.5em;
+}
+.skill-title{
+    margin-bottom: 1.5em;
+}
+.tools-techs{
+    margin: 3.5em 0 1.5em 0;
+    color: #fc0953;
+}
+.list-group-item{
+    padding: 0.3em;
+}
+.exp{
+    margin-bottom: 1em;
+}
+#portfolio{
+    padding: 9em 3em 6em 3em;
+}
+figure {
+	margin: 0;
+	position: relative;
+}
+figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+figcaption {
+    position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5em;
+	background: #1c1c22;
+}
+figcaption .row{
+    position: relative;
+    top: 90%;
+}
+figcaption .btn-outline-light {
+	display: inline-block;
+	border-color: #fc0953;
+}
+.img-animation figure img {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+.img-animation figure:hover img,
+.img-animation figure.cs-hover img {
+	-webkit-transform: translateY(-50px) scale(0.5);
+	-moz-transform: translateY(-50px) scale(0.5);
+	-ms-transform: translateY(-50px) scale(0.5);
+	transform: translateY(-50px) scale(0.5);
+}
+.img-animation figcaption {
+	height: 100%;
+	width: 100%;
+}
+.visit-link {
+    font-size: 1.3vw;
+}
+.source-code {
+    font-size: 1.3vw;
+}
+#portfolio h1{
+    margin-bottom: 0.5em;
+}
+#portfolio .card-body{
+    margin-bottom: 2em;
+}
+.card-text{
+    height: 80px;
+}
+.project-title{
+    margin-bottom: 0.3em;
+}
+.project-level{
+    margin-bottom: 2em; 
+}
+.tech-used{
+    color: #fc0953;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.contact{
+    background-color: #1c1c22;
+    padding: 7em 0;
+    position: relative; 
+    color: #f4f4f4;
+}
+.contact h4{
+    margin: 1em; 
+    color: #f4f4f4;
+}
+#email-link{
+    padding: 1em 2em;
+    margin-top: 2em;
+    border-color: #fc0953;
+    color: #fff;
+}
+.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active, .btn-outline-light.active, .btn-primary:active:focus{
+    background-color: #fc0953;
+    border-color: #fc0953;
+    color: #fff;
+}
+.social-links{
+    font-size: 1.5vw;
+    margin-bottom: 3em;
+}
+.social-links a{
+    text-decoration: none;
+    color: #1c1c22;
+    margin-right: 0.5em;
+}
+.social-links a:hover{
+    color: #fc0953;
+}
+hr{
+    width: 30vw;
+    margin: 0 auto;
+}
+footer{
+    padding: 4em 0 3em 0;
+    text-align: center;
+}
+#rights{
+    margin-top: 4em;
+    color: #888;
+    font-size: 0.8em;
+}
