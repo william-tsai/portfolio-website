@@ -160,6 +160,9 @@ html,h1,h2,h3,h4,h5,h6{
     font-size: 3em;
     font-weight: 500;
 }
+#my-journey a {
+    margin-top: 1em;
+}
 #skills .card{
     border-radius: 30px;
     padding: 2em 0 5em 0;
