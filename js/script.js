@@ -1,3 +1,5 @@
+AOS.init();
+
 // Hotjar Tracking Code for https://www.williamtsai.me/
 (function(h,o,t,j,a,r){
     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -9,8 +11,6 @@
 })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 
 $(".header, .container").height($(window).height());
-
-AOS.init();
 
 $(document).ready(function(){
     $('#scroll-btn').on('click', function(event){ 

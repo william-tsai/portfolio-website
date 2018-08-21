@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Varela|Black+Ops+One|Courgette|Muli');
+@import url('https://fonts.googleapis.com/css?family=Varela|Black+Ops+One');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ body {
 }
 html,h1,h2,h3,h4,h5,h6{
     font-family: 'Varela', sans-serif;
-    /* font-family: 'Muli', sans-serif; */
 }
 .logo{
     font-family: 'Black Ops One', cursive;
