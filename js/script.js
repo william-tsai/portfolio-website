@@ -12,13 +12,12 @@ $(".header, .container").height($(window).height());
 
 AOS.init();
 
-$('#scroll-btn').on('click', function(event){ 
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-});
-
 $(document).ready(function(){
+    $('#scroll-btn').on('click', function(event){ 
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
     $('#profile-pic-link').on('click', function(){
         $('.body-tag, .div-tag, .h1-tag, .e-h1-tag, .img-tag, .e-div-tag, .e-body-tag, .e-html-tag').fadeOut(function(){
             $('.headline-row').css('margin-top', '24px');
