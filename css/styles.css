@@ -239,7 +239,7 @@ figcaption .btn-outline-light {
 .source-code {
     font-size: 1.3vw;
 }
-#portfolio h1{
+#portfolio-title{
     margin-bottom: 0.5em;
 }
 #portfolio .card-body{
@@ -258,6 +258,28 @@ figcaption .btn-outline-light {
     color: #fc0953;
     margin-top: 2em;
     margin-bottom: 1.5em;
+}
+.github-calendar {
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
+#calendar-title {
+    margin-bottom: 1em;
+}
+.calendar {
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+}
+.contrib-column {
+    border-top: none !important;
+    border-left: none !important;
+}
+.contrib-column-first {
+    border-left: 1px solid #ddd !important;
+
+}
+.table-column {
+    border-right: 1px solid #ddd !important;
 }
 .contact{
     background-color: #1c1c22;

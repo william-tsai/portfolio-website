@@ -27,6 +27,9 @@
         <!-- Animate On Scroll -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
         <script type="text/javascript" src="js/script.js" async></script>
+        <!-- Github Calendar -->
+        <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
     </head>
     <body>
         <header class="header">
@@ -155,7 +158,7 @@
             </div>
         </div>
         <div id="portfolio">
-            <h1 class="display-3 text-center">Portfolio</h1>
+            <h1 id="portfolio-title" class="display-3 text-center">Portfolio</h1>
             <div class="container-fluid">
                 <div class="row">
                     <div class="card-deck">
@@ -251,6 +254,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="github-calendar">
+                <h1 id="calendar-title" class="display-6 text-center">My Github Activity</h1>
+                <div class="calendar">
+                    <!-- Loading stuff -->
+                    Loading the data just for you.
+                </div>
+                <script>
+                    new GitHubCalendar(".calendar", "william-tsai");
+                </script>
             </div>
         </div>
         <div class="contact text-center">
